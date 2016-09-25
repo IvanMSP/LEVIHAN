@@ -1,0 +1,38 @@
+{% extends 'base.html'%} 
+{%load static%}
+{% block content%}
+<div class="">
+				<div class="slider">
+						<ul class="slides">
+							<li>
+								 <img src="/media/.png"> <!-- random image -->
+								 <div class="caption left-align">
+								   <h2 class="white-text  "></h2>
+								   <h5 class="white-text  "></h5>
+								 </div>
+							 </li>
+							 <li>
+								 <img src="/media/.jpg"> <!-- random image -->
+								 <div class="caption center-align">
+								   <h2 class="white-text"></h2>
+								   <h5 class="white-text"></h5>
+							 </li>
+							 <li>
+								 <img src="/media/.jpg"> <!-- random image -->
+								 <div class="caption right-align">
+								   <h2 class="white-text "></h2>
+								   <h5 class="white-text "></h5>
+								 </div>
+							 </li>
+	        			</ul>		
+        		</div>
+        		
+{%endblock content%}
+
+{%block scripts%}
+<script>
+		$(document).ready(function(){
+    		$('.slider').slider({full_width: true,indicators:true});
+		});
+</script>
+{%endblock scripts%} 
